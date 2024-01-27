@@ -37,11 +37,11 @@ $transTime: 1s;
   overflow: hidden;
 
   @media screen and (max-width: $medium) {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   @media screen and (max-width: $small) {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @mixin h2($fw: 400) {
@@ -66,6 +66,7 @@ $transTime: 1s;
 .link {
   @include text();
   transition: all $transTime;
+  text-decoration: underline;
   &:hover {
     color: $cl-active;
   }
