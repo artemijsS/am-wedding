@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Marck_Script } from "next/font/google";
 import "../styles/reset.css";
 import "../styles/globals.css";
-import { Header } from "@/components";
+import { Footer, Header } from "@/components";
 
 const inter = Marck_Script({ weight: ["400"], subsets: ['latin', 'cyrillic'] });
 
@@ -26,6 +26,7 @@ export default function RootLayout({
           <body className={inter.className}>
               <Header />
               {children}
+              <Footer />
           </body>
       </html>
   );

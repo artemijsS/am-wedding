@@ -157,3 +157,32 @@
     }
   }
 }
+
+.footer {
+  margin-top: 80px;
+  background-color: $cl-active;
+
+  .wrapper {
+    @include maxWrapper();
+    @include wrapper();
+
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+      padding: 40px 0;
+      text-align: center;
+
+      svg {
+        width: 20%;
+        path {
+          fill: $bg;
+        }
+
+        @media screen and (max-width: $medium) {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
