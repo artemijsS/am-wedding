@@ -1,0 +1,72 @@
+$medium: 900px;
+$small: 600px;
+
+$bg: #2D2D2D;
+$bgSecond: #BDB1B1;
+$cl-active: #FFF;
+
+$transTime: 1s;
+
+@mixin maxWrapper($plus: 0px) {
+  margin: auto;
+  max-width: calc(1700px + $plus);
+}
+@mixin wrapper($minus: 0px) {
+  padding-left: calc(50px - $minus);
+  padding-right: calc(50px - $minus);
+
+  @media screen and (max-width: $small) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+@mixin paddingTop() {
+  padding-top: 80px;
+
+  @media screen and (max-width: $small) {
+    padding-top: 50px;
+  }
+}
+@mixin text($fw: 400) {
+  font-size: 30px;
+  color: $bgSecond;
+  font-weight: $fw;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  line-height: 130%;
+  overflow: hidden;
+
+  @media screen and (max-width: $medium) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: $small) {
+    font-size: 14px;
+  }
+}
+@mixin h2($fw: 400) {
+  font-size: 70px;
+  margin: 0;
+  color: $bgSecond;
+  font-weight: $fw;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  line-height: 130%;
+  overflow: hidden;
+
+  @media screen and (max-width: $medium) {
+    font-size: 35px;
+  }
+
+  @media screen and (max-width: $small) {
+    font-size: 28px;
+  }
+}
+
+.link {
+  @include text();
+  transition: all $transTime;
+  &:hover {
+    color: $cl-active;
+  }
+}
