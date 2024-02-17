@@ -28,7 +28,7 @@ $transTime: 1s;
   }
 }
 @mixin text($fw: 400) {
-  font-size: 30px;
+  font-size: 25px;
   color: $bgSecond;
   font-weight: $fw;
   font-style: normal;
@@ -37,7 +37,7 @@ $transTime: 1s;
   overflow: hidden;
 
   @media screen and (max-width: $medium) {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   @media screen and (max-width: $small) {
@@ -45,7 +45,7 @@ $transTime: 1s;
   }
 }
 @mixin h2($fw: 400) {
-  font-size: 70px;
+  font-size: 50px;
   margin: 0;
   color: $bgSecond;
   font-weight: $fw;

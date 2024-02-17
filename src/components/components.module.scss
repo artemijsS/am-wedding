@@ -159,6 +159,11 @@
           color: $bg;
         }
 
+        p {
+          @include text();
+          color: $bg;
+        }
+
         iframe {
           padding-top: 30px;
         }
@@ -238,6 +243,33 @@
       span {
         font-weight: bold;
       }
+
+      .timeLine {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 25px;
+
+        div {
+          display: flex;
+          gap: 25px;
+          align-items: flex-start;
+          text-align: left;
+
+          p {
+            position: relative
+          }
+
+          p + p {
+            &:before {
+              content: "-";
+              position: absolute;
+              left: -17px;
+            }
+          }
+        }
+      }
+
     }
 
     @media screen and (max-width: $medium) {

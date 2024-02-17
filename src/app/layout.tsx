@@ -1,11 +1,11 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Marck_Script } from "next/font/google";
+import { Inter } from "next/font/google";
 import "../styles/reset.css";
 import "../styles/globals.css";
 import { Footer, Header } from "@/components";
 
-const inter = Marck_Script({ weight: ["400"], subsets: ['latin', 'cyrillic'] });
+const inter = Inter({ weight: ["400"], subsets: ['latin', 'cyrillic'] });
 
 export const metadata: Metadata = {
     title: "Артём & Мария",

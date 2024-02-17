@@ -13,9 +13,9 @@ export const Info = () => {
                     </div>
                     <div className={styles.infoBlock}>
                         <h2>20.07.24</h2>
-                        <h2>Grand Palace Hotel</h2>
-                        <p>Pils iela 12, Centra rajons, Rīga, LV-1050</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.908492785757!2d24.1049192039786!3d56.950369038169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd9fa301997%3A0x386dc60eb39e2c7a!2sGrand%20Palace%20Hotel!5e0!3m2!1slv!2slv!4v1706360935955!5m2!1slv!2slv" width="100%" height="300px" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <h2>"Zirgzandales"</h2>
+                        <p>Mārupes novads, Vētras ciems, mājas Zandeļi, stallis Zirgzandales</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1090.177827068932!2d23.9941336!3d56.8741447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed0b30845927f%3A0x2371ee80f75d3291!2sZirgzandales!5e0!3m2!1slv!2suk!4v1708190668144!5m2!1slv!2suk" width="100%" height="300px" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
