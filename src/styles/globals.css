@@ -3,7 +3,6 @@ html {
     min-width: 320px;
     background-image: url("/bg.png");
     background-size: contain;
-    /*background-size: 100% 100%;*/
 }
 
 @media screen and (max-width: 900px) {

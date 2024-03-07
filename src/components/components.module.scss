@@ -101,90 +101,18 @@
     margin: auto;
     h2 {
       @include h2();
-    }
-  }
-}
+      position: relative;
 
-.info {
-  @include maxWrapper();
-  @include wrapper();
-  @include text();
-
-  &.reverse {
-    .box {
-      .blocks {
-        flex-direction: row-reverse;
-
-        .img {
-          padding: 30px 30px 30px 0;
-          justify-content: flex-end;
+      span {
+        position: relative;
+        svg {
+          position: absolute;
+          bottom: -6%;
+          left: 0;
 
           @media screen and (max-width: $medium) {
             display: none;
           }
-        }
-      }
-    }
-  }
-
-  .box {
-    @include paddingTop();
-
-    .blocks {
-      background-color: $bgSecond;
-      display: flex;
-
-      .img {
-        width: 40%;
-        height: 100%;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        padding: 30px 0 30px 30px;
-
-        img {
-          height: 100%;
-          width: 80%;
-          object-fit: contain;
-        }
-      }
-
-      .infoBlock {
-        flex: 1;
-        padding: 50px 30px;
-        color: $bg;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        h2 {
-          @include h2();
-          color: $bg;
-        }
-
-        p {
-          @include text();
-          color: $bg;
-        }
-
-        iframe {
-          padding-top: 30px;
-        }
-      }
-
-      @media screen and (max-width: $medium) {
-        flex-direction: column;
-
-        .img {
-          width: 100%;
-          padding: unset;
-          padding-top: 20px;
-          justify-content: center;
-        }
-
-        .infoBlock {
-          padding: 20px;
         }
       }
     }
@@ -221,69 +149,20 @@
   }
 }
 
-.textBlock {
-  @include maxWrapper();
-  @include wrapper();
+.firstImage {
+  max-width: 950px;
+  margin: auto;
 
-  .wrapper {
-    @include paddingTop();
-    @include text();
+  img {
+    margin: 140px auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 
-    max-width: 60%;
-    margin: auto;
-
-    .box {
-      text-align: center;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      border-top: 1px solid $bgSecond;
-      border-bottom: 1px solid $bgSecond;
-
-      h2 {
-        @include h2();
-        margin: 0 0 10px 0;
-      }
-
-      span {
-        font-weight: bold;
-      }
-
-      .timeLine {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        margin-top: 25px;
-
-        div {
-          display: flex;
-          gap: 25px;
-          align-items: flex-start;
-          text-align: left;
-
-          p {
-            position: relative
-          }
-
-          p + p {
-            &:before {
-              content: "-";
-              position: absolute;
-              left: -17px;
-            }
-          }
-        }
-      }
-
-    }
-
-    @media screen and (max-width: $medium) {
-      max-width: 90%;
-
-      .box {
-        padding-top: 30px;
-        padding-bottom: 30px;
-      }
-
+  @media screen and (max-width: $medium) {
+    img {
+      margin: 40px auto;
     }
   }
 }
