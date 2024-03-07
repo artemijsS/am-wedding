@@ -1,4 +1,14 @@
 html {
     background-color: #2D2D2D;
     min-width: 320px;
+    background-image: url("/bg.png");
+    background-size: contain;
+    /*background-size: 100% 100%;*/
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        background-image: url("/bgMob.png");
+        background-size: cover;
+    }
 }

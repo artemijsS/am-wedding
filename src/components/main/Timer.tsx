@@ -12,7 +12,7 @@ export const Timer = () => {
     const [end, setEnd] = useState(false);
 
     const calculateTimeLeft = () => {
-        const targetDate = new Date("2024-07-23T00:00:00");
+        const targetDate = new Date("2024-08-09T00:00:00");
         const currentDate = new Date();
         const timeDifference = targetDate.getTime() - currentDate.getTime();
 
@@ -43,11 +43,17 @@ export const Timer = () => {
 
     return (
         <div className={styles.timer}>
-            <div className={styles.box}>
+            <div className={styles.boxTimer}>
                 <div>{days} <span>дней</span></div>
                 <div>{hours} <span>часов</span></div>
                 <div>{minutes} <span>минут</span></div>
                 <div>{seconds} <span>секунд</span></div>
+            </div>
+            <div className={styles.inviteText}>
+                Приглашаем Вас разделить с нами самый незабываемый день в нашей жизни— нашу свадьбу
+            </div>
+            <div className={styles.date}>
+                <h2>09 августа 2024</h2>
             </div>
         </div>
     )

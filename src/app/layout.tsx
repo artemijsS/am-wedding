@@ -1,11 +1,11 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Bellota } from "next/font/google";
 import "../styles/reset.css";
 import "../styles/globals.css";
 import { Footer, Header } from "@/components";
 
-const inter = Inter({ weight: ["400"], subsets: ['latin', 'cyrillic'] });
+const belotta = Bellota({ weight: ["300","400", "700"], subsets: ['latin', 'cyrillic'] });
 
 export const metadata: Metadata = {
     title: "Артём & Мария",
@@ -23,8 +23,7 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="ru">
-          <body className={inter.className}>
-              <Header />
+          <body className={belotta.className}>
               {children}
               <Footer />
           </body>
