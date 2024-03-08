@@ -29,6 +29,23 @@ $secondWrapper: 730px;
   }
 }
 @mixin text($fw: 400) {
+  font-size: 20px;
+  color: $bgSecond;
+  font-weight: $fw;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  line-height: 130%;
+  overflow: hidden;
+
+  @media screen and (max-width: $medium) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: $small) {
+    font-size: 12px;
+  }
+}
+@mixin textSemi($fw: 400) {
   font-size: 24px;
   color: $bgSecond;
   font-weight: $fw;
@@ -45,8 +62,9 @@ $secondWrapper: 730px;
     font-size: 14px;
   }
 }
-@mixin h2($fw: 300) {
-  font-size: 35px;
+@mixin h2($fw: 200) {
+  font-family: "Poiret One", sans-serif;
+  font-size: 40px;
   margin: 0;
   color: $bgSecond;
   font-weight: $fw;
@@ -63,22 +81,23 @@ $secondWrapper: 730px;
     font-size: 22px;
   }
 }
-@mixin h1($fw: 200) {
-  font-size: 80px;
+@mixin h3($fw: 200) {
+  font-family: "Poiret One", sans-serif;
+  font-size: 24px;
   margin: 0;
   color: $bgSecond;
   font-weight: $fw;
   font-style: normal;
   letter-spacing: 0.2px;
-  line-height: 110%;
+  line-height: 130%;
   overflow: hidden;
 
   @media screen and (max-width: $medium) {
-    font-size: 45px;
+    font-size: 18px;
   }
 
   @media screen and (max-width: $small) {
-    font-size: 35px;
+    font-size: 16px;
   }
 }
 
