@@ -1,5 +1,5 @@
 import React from "react";
-import { FirstImage, Invite, MainBlock, Timer } from "@/components";
+import { FirstImage, Invite, MainBlock, Schedule, Timer } from "@/components";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
           <Timer />
           <FirstImage />
           <MainBlock />
+          <Schedule />
       </>
   );
 }

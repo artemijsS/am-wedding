@@ -100,6 +100,25 @@ $secondWrapper: 730px;
     font-size: 16px;
   }
 }
+@mixin h1($fw: 400) {
+  font-family: "Poiret One", sans-serif;
+  font-size: 64px;
+  margin: 0;
+  color: $bgSecond;
+  font-weight: $fw;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  line-height: 130%;
+  overflow: hidden;
+
+  @media screen and (max-width: $medium) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: $small) {
+    font-size: 32px;
+  }
+}
 
 .link {
   @include text();
