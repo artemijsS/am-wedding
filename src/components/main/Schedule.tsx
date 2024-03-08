@@ -1,7 +1,4 @@
 import styles from "../components.module.scss";
-import secondImage from "@/assets/images/second.png";
-import Image from "next/image";
-
 
 export const Schedule = () => {
     return (

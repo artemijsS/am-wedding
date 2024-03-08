@@ -156,6 +156,22 @@
   @include maxWrapper();
   @include wrapper();
 
+  &.disclaimer {
+    @include paddingTop();
+    .box {
+      .secondWrapper {
+        .info {
+          margin-top: 0 !important;
+        }
+        .contactInfo {
+          @include textSemi();
+          font-family: "Poiret One", sans-serif !important;
+          text-align: center;
+        }
+      }
+    }
+  }
+
   .box {
 
     border-radius: 22px;
