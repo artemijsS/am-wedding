@@ -11,6 +11,9 @@ export const DisclaimerBlock = () => {
                     <div className={styles.contactInfo}>
                         Мария Павлова <a href="tel:+37124930981">+371 24930981</a>
                     </div>
+                    <div className={styles.contactInfo}>
+                        Instagram: <a target={"_blank"} href="https://www.instagram.com/event.romanov">@event.romanov</a>
+                    </div>
                 </div>
             </div>
         </div>

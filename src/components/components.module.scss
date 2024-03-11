@@ -167,6 +167,10 @@
           @include textSemi();
           font-family: "Poiret One", sans-serif !important;
           text-align: center;
+
+          a {
+            text-decoration: underline 0.5px;
+          }
         }
       }
     }

@@ -36,7 +36,7 @@ export const Schedule = () => {
                     <div className={styles.line}>
                         <div className={styles.time}>02:30</div>
                         <div className={styles.info}>
-                            <div className={styles.b}>Трансфер обратно в Ригу</div>
+                            <div className={styles.b}>Трансфер в Ригу</div>
                         </div>
                     </div>
                 </div>
