@@ -5,7 +5,7 @@ html {
     background-color: #2D2D2D;
     min-width: 320px;
     background-image: url("/bg.png");
-    background-size: contain;
+    background-size: cover;
 }
 
 @media screen and (max-width: 900px) {
