@@ -4,7 +4,7 @@ export const Schedule = () => {
     return (
         <div className={styles.schedule}>
             <div className={styles.box}>
-                <h2>Распорядок дня</h2>
+                <h2>Программа дня</h2>
                 <div className={styles.sc}>
                     <div className={styles.line}>
                         <div className={styles.time}>13:30</div>
