@@ -3,13 +3,13 @@
 import styles from "../components.module.scss";
 import { useEffect, useState } from "react";
 
-export const Timer = () => {
+export const Timer = ({ defDif }: { defDif: number | null }) => {
 
-    const [days, setDays] = useState("");
-    const [hours, setHours] = useState("");
-    const [minutes, setMinutes] = useState("");
-    const [seconds, setSeconds] = useState("");
-    const [end, setEnd] = useState(false);
+    const [days, setDays] = useState(defDif ? Math.floor(defDif / (1000 * 60 * 60 * 24)) : "");
+    const [hours, setHours] = useState(defDif ? Math.floor((defDif % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) : "");
+    const [minutes, setMinutes] = useState(defDif ? Math.floor((defDif % (1000 * 60 * 60)) / (1000 * 60)) : "");
+    const [seconds, setSeconds] = useState(defDif ? Math.floor((defDif % (1000 * 60)) / 1000) : "");
+    const [end, setEnd] = useState(!defDif);
 
     const calculateTimeLeft = () => {
         const targetDate = new Date("2024-08-09T00:00:00");
