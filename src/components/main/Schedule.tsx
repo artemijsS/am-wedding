@@ -21,16 +21,10 @@ export const Schedule = () => {
                         </div>
                     </div>
                     <div className={styles.line}>
-                        <div className={styles.time}>15:00</div>
+                        <div className={styles.time}>16:00</div>
                         <div className={styles.info}>
                             <div className={styles.b}>Трансфер для всех гостей</div>
                             <div>Zirgzandales (Mārupes novads, Vētras ciems, stallis Zirgzandales)</div>
-                        </div>
-                    </div>
-                    <div className={styles.line}>
-                        <div className={styles.time}>16:00</div>
-                        <div className={styles.info}>
-                            <div className={styles.b}>Свадебный Welcome</div>
                         </div>
                     </div>
                     <div className={styles.line}>
