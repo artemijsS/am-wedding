@@ -30,20 +30,20 @@ export const Schedule = () => {
                     <div className={styles.line}>
                         <div className={styles.time}>17:00</div>
                         <div className={styles.info}>
-                            <div className={styles.b}>Велком</div>
+                            <div className={styles.b}>Welcome</div>
                             <div>Zirgzandales (Mārupes novads, Vētras ciems, stallis Zirgzandales)</div>
                         </div>
                     </div>
                     <div className={styles.line}>
                         <div className={styles.time}>18:00</div>
                         <div className={styles.info}>
-                            <div className={styles.b}>Церемония</div>
+                            <div className={styles.b}>Церемония и поздравления</div>
                         </div>
                     </div>
                     <div className={styles.line}>
                         <div className={styles.time}>19:00</div>
                         <div className={styles.info}>
-                            <div className={styles.b}>Банкет/вечеринка</div>
+                            <div className={styles.b}>Вечеринка (до ~02:00)</div>
                         </div>
                     </div>
                     {/*<div className={styles.line}>*/}
