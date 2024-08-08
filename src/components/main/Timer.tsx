@@ -12,7 +12,7 @@ export const Timer = ({ defDif }: { defDif: number | null }) => {
     const [end, setEnd] = useState(!defDif);
 
     const calculateTimeLeft = () => {
-        const targetDate = new Date("2024-08-09T00:00:00");
+        const targetDate = new Date("2024-08-09T17:00:00");
         const currentDate = new Date();
         const timeDifference = targetDate.getTime() - currentDate.getTime();
 
